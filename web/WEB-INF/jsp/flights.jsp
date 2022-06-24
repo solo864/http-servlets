@@ -14,13 +14,19 @@
 </head>
 <body>
 <h1>List of flights</h1>
+
 <ul>
 <%
-    List<FlightDto> flightDto = FlightService.getInstance().findAll();
-    for (FlightDto dto : flightDto) {
-        out.write("<li>%s</li>".formatted(dto.getDescription()));
-    }
+
 %>
+    <p>LIST SIZE ${sessionScope.flights.size()}</p>
+    <p>FLIGHT LIST: ${sessionScope.flights}</p>
+    <p>FLIGHT MAP: ${requestScope.flightsMap}</p>
+    <p>COOKIE: ${cookie["JSESSIONID"].value}</p>
+    <p>HEADER: ${header["cookie"]}</p>
+    <p>param id: ${param.id}</p>
+    <p>param size: ${param.size}</p>
+
 </ul>
 </body>
 </html>
