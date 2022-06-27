@@ -1,4 +1,4 @@
-package entity;
+package mapper;
 
 
 import lombok.AllArgsConstructor;
