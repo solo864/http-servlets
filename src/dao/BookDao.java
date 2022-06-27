@@ -14,7 +14,7 @@ import java.util.List;
 import static java.sql.Statement.RETURN_GENERATED_KEYS;
 
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
-public class BookDao {
+public class BookDao  {
 
     private static final BookDao INSTANCE = new BookDao();
 
