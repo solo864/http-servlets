@@ -1,15 +1,16 @@
 package servlet;
 
+import entity.BookEntity;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import service.BookService;
+import util.JspHelper;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.nio.charset.StandardCharsets;
+import java.util.List;
 
 @WebServlet("/books")
 public class BookServlet extends HttpServlet {
@@ -18,19 +19,12 @@ public class BookServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.setContentType("text/html");
-        resp.setCharacterEncoding(StandardCharsets.UTF_8.name());
-
         var publisherId = Long.valueOf(req.getParameter("publisherId"));
+        final List<BookEntity> bookEntities = bookService.findAllByPublisherId(publisherId);
+        req.setAttribute("books", bookEntities);
+        req.getRequestDispatcher(JspHelper.get("books"))
+                .forward(req, resp);
 
-        try (var writer = resp.getWriter()) {
-            writer.write("<h1>BOOKS LIST</h1>");
-            writer.write("<ul>");
-            bookService.findAllByPublisherId(publisherId)
-                            .forEach(entity -> {
-                                writer.write("<h1> <li> %s %s %s %s %s </li></h1>".formatted(entity.getId(),entity.getName(),entity.getGenre(), entity.getPageCount(),entity.getPageCount()));
-                            });
-            writer.write("</ul>");
-        }
     }
 }
+
