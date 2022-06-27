@@ -3,6 +3,7 @@ package dao;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 import lombok.SneakyThrows;
+import mapper.UserEntity;
 import util.ConnectionManager;
 
 import java.sql.PreparedStatement;
