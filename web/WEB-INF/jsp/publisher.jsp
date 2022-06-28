@@ -1,25 +1,20 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: iamus
-  Date: 24.06.2022
-  Time: 17:06
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 </head>
 <body>
-
 <h1>LIST OF PUBLISHERS</h1>
-<ul>
-    <p> Publishers size: ${requestScope.publishers} </p>
-    <p>Publishers list${requestScope.publishers}</p>
-    <p> Publishers map ${sessionScope.publishersMap}</p>
-    <p>${empty sessionScope.publishersMap}</p>
-    <p>${header["cookie"]}</p>
-    <p>JSESSIONID ${cookie["JSESSIONID"].value}</p>
-</ul>
+<c:forEach var="publishers" items="${requestScope.publishers}">
+    <li>
+        <a href="${pageContext.request.contextPath}/books?publisherId=${publishers.id}"> ${publishers.name} </a>
+    </li>
+</c:forEach>
 </body>
 </html>
