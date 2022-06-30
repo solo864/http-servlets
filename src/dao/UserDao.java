@@ -27,7 +27,6 @@ public class UserDao implements Dao<Integer, UserEntity> {
             """;
 
 
-    @Override
     @SneakyThrows
     public UserEntity save(UserEntity entity) {
         try (var connection = ConnectionManager.get();
