@@ -14,6 +14,7 @@ import java.nio.charset.StandardCharsets;
 @WebServlet("/tickets")
 public class TicketServlet extends HttpServlet {
 
+
     private final TicketService ticketService = TicketService.getInstance();
 
     @Override
