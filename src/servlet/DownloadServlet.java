@@ -13,6 +13,7 @@ import java.io.PrintWriter;
 @WebServlet("/check-downloads")
 public class DownloadServlet extends HttpServlet {
 
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setHeader("Content-Disposition", "attachment; \"filename.txt\"");
