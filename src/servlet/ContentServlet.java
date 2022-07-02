@@ -12,6 +12,7 @@ import java.io.IOException;
 @WebServlet("/content")
 public class ContentServlet extends HttpServlet {
 
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.getRequestDispatcher(JspHelper.get("content")).forward(req,resp);
