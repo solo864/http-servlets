@@ -13,6 +13,7 @@ import java.util.Objects;
 @Builder
 public class BookEntity {
 
+
     private Long id;
     private String name;
     private String genre;
