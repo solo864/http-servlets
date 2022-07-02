@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Helvetica Neue", Arial, sans-serif;
+    text-align: center;
+}
+
+#main {
+    background-color: #eee;
+    border-radius: 10px;
+    width: 95%;
+    margin: 30px auto;
+}
+
+#title {
+    font-size: 50px;
+    padding-top: 20px;
+}
+
+#title-caption {
+    font-size: 15px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+#image {
+    border-radius: 2%;
+}
+
+#img-caption {
+    font-size: 15px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    color: rgb(79, 76, 76);
+}
+
+#img-div {
+    background-color: white;
+    border-radius: 10px;
+    width: 98%;
+    margin: 10px auto;
+    padding-top: 10px;
+}
+
+#headline {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 30px;
+}
+
+ul {
+    max-width: 550px;
+    text-align: left;
+    line-height: 1.6;
+    margin: 0 auto 50px auto;
+}
+
+li {
+    margin: 16px;
+}
+
+blockquote {
+    font-size: 20px;
+    font-style: italic;
+    max-width: 545px;
+    margin: 0 auto 40px auto;
+    text-align: left;
+    text-shadow: 0.5px 0.5px 0.5px rgb(118, 118, 118);
+}
+
+#wiki-link {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+a {
+    color: rgb(53, 83, 135);
+    text-decoration: none;
+}
+
+#wiki-link {
+    padding-bottom: 20px;
+}
+
+@media (max-width: 460px) {
+    body {
+        text-align: center;
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    #main {
+        margin: 0;
+        max-width: 95%;
+        /* margin: 10px auto; */
+    }
+
+    ul,
+    blockquote {
+        max-width: 80%;
+    }
+
+    #image {
+        max-width: 100%;
+        height: auto;
+    }
+}
