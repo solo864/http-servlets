@@ -6,8 +6,8 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import model.Gender;
-import model.Role;
+import model.enums.Gender;
+import model.enums.Role;
 import util.JspHelper;
 
 import java.io.IOException;
