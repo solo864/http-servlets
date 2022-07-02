@@ -16,6 +16,7 @@ import java.util.stream.Collectors;
 @WebServlet("/publishers")
 public class PublisherServlet extends HttpServlet {
 
+
     private final PublisherService publisherService = PublisherService.getInstance();
 
 
