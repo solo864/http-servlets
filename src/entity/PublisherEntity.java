@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 @Builder
 public class PublisherEntity {
 
+
     private Long id;
     private String name;
     private Integer createdYear;
