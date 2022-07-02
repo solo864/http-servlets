@@ -23,6 +23,7 @@ public class UserDao implements Dao<Integer, UserEntity> {
             INSERT INTO users (name, email, password, role, gender, birthday) 
             VALUES
             (?, ?, ?, ?, ?, ?)
+
                         
             """;
 
