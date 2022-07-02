@@ -15,6 +15,7 @@ import java.util.List;
 @WebServlet("/books")
 public class BookServlet extends HttpServlet {
 
+
     private final BookService bookService = BookService.getInstance();
 
     @Override
