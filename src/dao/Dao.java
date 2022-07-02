@@ -15,4 +15,6 @@ public interface Dao <K,E>{
 
     boolean delete(K id);
 
+
+
 }
