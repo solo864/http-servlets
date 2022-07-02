@@ -14,6 +14,7 @@ import java.time.LocalDateTime;
 @Builder
 public class FlightEntity {
 
+
     private Long id;
     private String flightNo;
     private LocalDateTime departureDate;
