@@ -13,6 +13,7 @@ import java.math.BigDecimal;
 @Builder
 public class TicketEntity {
 
+
     private Long id;
     private String passengerNo;
     private String passengerName;
