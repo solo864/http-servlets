@@ -19,7 +19,7 @@ public class BookDao  {
     private static final BookDao INSTANCE = new BookDao();
 
     private static final String FIND_ALL = """
-                        
+                           
             SELECT
             id,
             name,
@@ -27,6 +27,7 @@ public class BookDao  {
             page_count,
             publishing_year
             FROM books
+    
                         
             """;
 
