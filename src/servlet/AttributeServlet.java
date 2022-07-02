@@ -15,6 +15,7 @@ import java.nio.charset.StandardCharsets;
 @WebServlet("/attributes")
 public class AttributeServlet extends HttpServlet {
 
+
     private static final String USER = "user";
 
     @Override
