@@ -15,6 +15,7 @@ import java.util.stream.Collectors;
 @WebServlet("/flights")
 public class FlightServlet extends HttpServlet {
 
+
     private final FlightService flightService = FlightService.getInstance();
 
     @Override
