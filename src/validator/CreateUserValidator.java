@@ -3,8 +3,8 @@ package validator;
 import dto.CreateUserDto;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
-import model.Gender;
-import model.Role;
+import model.enums.Gender;
+import model.enums.Role;
 
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class CreateUserValidator implements Validator<CreateUserDto> {
