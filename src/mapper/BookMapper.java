@@ -6,6 +6,7 @@ import entity.BookEntity;
 
 public class BookMapper {
 
+
     public static BookEntity mapDtoToEntity(BookRegisterDto dto) {
         return BookEntity.builder()
                 .name(dto.getName())
