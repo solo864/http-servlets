@@ -5,8 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import model.Gender;
-import model.Role;
+import model.enums.Gender;
+import model.enums.Role;
 
 import java.time.LocalDate;
 
@@ -15,6 +15,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @Builder
 public class UserEntity {
+
 
     private Integer id;
     private String name;
