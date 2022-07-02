@@ -3,12 +3,13 @@ package mapper;
 import dto.CreateUserDto;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
-import model.Gender;
-import model.Role;
+import model.enums.Gender;
+import model.enums.Role;
 import util.LocalDateFormatter;
 
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class CreateUserMapper implements Mapper<UserEntity, CreateUserDto> {
+
 
 
     private static final CreateUserMapper INSTANCE = new CreateUserMapper();
