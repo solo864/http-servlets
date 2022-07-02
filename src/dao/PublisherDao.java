@@ -17,6 +17,7 @@ public class PublisherDao {
     private static final PublisherDao INSTANCE = new PublisherDao();
 
     private static final String FIND_ALL = """
+             
                         
             SELECT
             id,
