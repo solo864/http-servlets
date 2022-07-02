@@ -14,6 +14,7 @@ import java.nio.charset.StandardCharsets;
 @WebServlet("/cookie")
 public class CookieServlet extends HttpServlet {
 
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setCharacterEncoding(StandardCharsets.UTF_8.name());
