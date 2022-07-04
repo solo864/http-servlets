@@ -24,7 +24,7 @@ public class CreateUserValidator implements Validator<CreateUserDto> {
         return validationResult;
     }
 
-    public static CreateUserValidator getInstance() {
+    public  CreateUserValidator getInstance() {
         return INSTANCE;
     }
 }
