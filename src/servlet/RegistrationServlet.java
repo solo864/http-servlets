@@ -12,7 +12,7 @@ import util.JspHelper;
 
 import java.io.IOException;
 
-@WebServlet("/registration")
+@WebServlet(value = "/registration", name = "RegistrationServlet")
 public class RegistrationServlet extends HttpServlet {
 
     @Override
