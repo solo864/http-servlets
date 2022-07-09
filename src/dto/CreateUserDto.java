@@ -1,5 +1,6 @@
 package dto;
 
+import jakarta.servlet.http.Part;
 import lombok.Builder;
 import lombok.Value;
 
@@ -8,11 +9,11 @@ import lombok.Value;
 public class CreateUserDto {
 
 
-    private String name;
-    private String password;
-    private String email;
-    private String birthday;
-    private String role;
-    private String gender;
-
+    String name;
+    String password;
+    String email;
+    String birthday;
+    String role;
+    String gender;
+    Part image;
 }
