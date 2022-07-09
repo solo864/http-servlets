@@ -1,4 +1,4 @@
-package mapper;
+package entity;
 
 
 import lombok.AllArgsConstructor;
@@ -24,5 +24,5 @@ public class UserEntity {
     private LocalDate birthday;
     private Gender gender;
     private Role role;
-
+    private String image;
 }
