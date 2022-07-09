@@ -1,9 +1,9 @@
 package dao;
 
+import entity.UserEntity;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 import lombok.SneakyThrows;
-import mapper.UserEntity;
 import util.ConnectionManager;
 
 import java.sql.PreparedStatement;
@@ -20,9 +20,9 @@ public class UserDao implements Dao<Integer, UserEntity> {
 
     private static final String SAVE = """
                         
-            INSERT INTO users (name, email, password, role, gender, birthday) 
+            INSERT INTO users (name, email, password, role, gender, birthday, image) 
             VALUES
-            (?, ?, ?, ?, ?, ?)
+            (?, ?, ?, ?, ?, ?, ?)
 
                         
             """;
@@ -38,6 +38,8 @@ public class UserDao implements Dao<Integer, UserEntity> {
             preparedStatement.setObject(4, entity.getRole().name());
             preparedStatement.setObject(5, entity.getGender().name());
             preparedStatement.setObject(6, entity.getBirthday());
+            preparedStatement.setObject(7, entity.getImage());
+
             preparedStatement.executeUpdate();
 
             ResultSet generatedKeys = preparedStatement.getGeneratedKeys();
