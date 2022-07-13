@@ -41,7 +41,6 @@ public class UserDao implements Dao<Integer, UserEntity> {
             preparedStatement.setObject(7, entity.getImage());
 
             preparedStatement.executeUpdate();
-
             ResultSet generatedKeys = preparedStatement.getGeneratedKeys();
             generatedKeys.next();
 
