@@ -14,6 +14,7 @@ import java.util.List;
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class PublisherDao {
 
+
     private static final PublisherDao INSTANCE = new PublisherDao();
 
     private static final String FIND_ALL = """
