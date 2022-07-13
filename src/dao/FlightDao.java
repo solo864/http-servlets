@@ -16,6 +16,7 @@ import java.util.List;
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class FlightDao {
 
+
     private static final FlightDao INSTANCE = new FlightDao();
 
 
