@@ -13,7 +13,7 @@ import util.JspHelper;
 
 import java.io.IOException;
 
-@WebServlet(value = "/registration", name = "RegistrationServlet")
+@WebServlet("/registration")
 public class RegistrationServlet extends HttpServlet {
 
     private final UserService userService = UserService.getInstance();
@@ -38,5 +38,6 @@ public class RegistrationServlet extends HttpServlet {
                 .build();
 
         userService.saveUser(userDto);
+
     }
 }
