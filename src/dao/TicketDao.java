@@ -13,6 +13,7 @@ import java.util.List;
 
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class TicketDao {
+
     private static final TicketDao INSTANCE = new TicketDao();
 
     private static final String FIND_ALL_BY_FLIGHT_ID = """
