@@ -8,7 +8,6 @@ import lombok.Value;
 @Builder
 public class CreateUserDto {
 
-
     String name;
     String password;
     String email;
